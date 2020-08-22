@@ -6,11 +6,11 @@ class Bullet(Sprite):
         self.setting=setting
         self.ship=ship
         self.screen=screen
-        self.rect=pygame.Rect(0,0,self.setting.bullet_width,self.setting.bullet_high)
+        self.image=pygame.image.load("image\ship"+str(setting.ship_type)+'.bmp')
+        self.rect=self.image.get_rect()
         self.rect.centerx=self.ship.rect.centerx
         self.rect.top=self.ship.rect.top
         self.y=float(self.rect.y)
-        self.color=self.setting.bullet_color
         self.speed=self.setting.bullet_speed
 
     def update(self):
@@ -18,4 +18,4 @@ class Bullet(Sprite):
         self.rect.y=self.y
 
     def draw_bullet(self):
-        pygame.draw.rect(self.screen,self.color,self.rect)
+        self.screen.blit(self.image,self.rect)

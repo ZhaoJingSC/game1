@@ -4,13 +4,10 @@ class Setting():
         self.high=600
         self.bg_color=(0,255,255)
         self.ship_limit = 3
+        self.ship_type = 1#默认飞船形状为1型
         #设置子弹属性
 
-        self.bullet_width=200
-        self.bullet_high=50
-        self.bullet_color=(255,0,0)
-        self.bullet_allowed=5
-
+        self.bullet_allowed=9
         self.lvlup_speed=2
         self.score_lvlup_speed=2
 
@@ -19,7 +16,7 @@ class Setting():
         self.enemy_flag=1
         self.ship_speed=1.5
         self.bullet_speed = 1
-        self.enemy_speed = 10
+        self.enemy_speed = 1
         self.enemy_down_speed = 2
         self.enemy_score=5
 

@@ -56,5 +56,3 @@ class ScoreBoard():
 
     def blit_ship(self):
         self.ships.draw(self.screen)
-
-

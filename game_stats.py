@@ -3,6 +3,7 @@ class GameStats():
         self.setting=setting
         self.reset_stats()#为什么要这么写代码
         self.game_active=False
+        self.choice_active=False
         self.high_score=0
 
 
